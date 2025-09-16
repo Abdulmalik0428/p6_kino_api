@@ -1,2 +1,2 @@
 # p6_kino_api
-Farobiy  rest_api o'rganish uchun
+Farobiy P6 kino API project
