@@ -17,10 +17,4 @@ class CommentView(APIView):
         return Response(serializer.errors)
 
 
-class CommentDetailView(APIView):
-    def delete(self, request, pk):
-        comment = Comment.objects.get(pk=pk)
-        comment.delete()
-        return Response({"detail": "Comment deleted"})
-
 
