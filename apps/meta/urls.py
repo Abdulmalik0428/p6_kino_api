@@ -6,10 +6,10 @@ urlpatterns = [
     path('watch-session-create/',
          watchsession.WatchSessionCreateView.as_view(),
          name='watch_session_create'),
-    path('like/',
+    path('movie/<int:pk>/likes/',
         like.LikeView.as_view(),
         name='like'),
-    path('comment/',
+    path('movie/<int:movie_id>/comments/',
         comment.CommentView.as_view(),
         name='comment'),
 ]

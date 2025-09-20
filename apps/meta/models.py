@@ -22,5 +22,6 @@ class Like(BaseModel):
 class Comment(BaseModel):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE , null=False, blank=False)
     watch_session = models.ForeignKey(WatchSession, on_delete=models.SET_NULL, null=True, blank=True)
-    text = models.TextField()
+    body = models.TextField()
+
 
